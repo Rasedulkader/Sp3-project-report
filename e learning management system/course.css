@@ -1,0 +1,108 @@
+body {
+
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+header {
+
+    background-color: #2a0435;
+
+    color: white;
+
+    padding: 10px;
+
+    text-align: center;
+
+}
+
+header input[type="text"] {
+
+    border: none;
+
+    border-radius: 5px;
+
+    padding: 5px;
+
+    width: 50%;
+
+}
+<button id="search-btn" style="background-color: #4CAF50; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Search</button>
+
+nav {
+    background-color: #0727345a;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* Add this to make the navbar items align horizontally */
+    flex-direction: row;
+  }
+  
+  nav a {
+    color: rgba(14, 3, 3, 0.662);
+    display: block;
+    padding: 14px;
+    text-decoration: none;
+    /* Increase font size */
+    font-size: 18px;
+  }
+  
+  nav a:hover {
+    background-color: #3fbfce90;
+  }
+main {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    margin: 20px;
+
+}
+
+.card {
+
+    background-color: white;
+
+    border-radius: 5px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    margin: 10px;
+
+    padding: 10px;
+
+    text-align: center;
+
+    width: 30%;
+
+}
+
+.card img {
+
+    border-radius: 5px;
+
+    width: 100%;
+
+}
+
+footer {
+
+    background-color: #333;
+
+    color: white;
+
+    padding: 10px;
+
+    text-align: center;
+
+}

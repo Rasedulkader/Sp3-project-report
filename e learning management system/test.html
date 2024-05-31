@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title>Course Page</title>
+    <link rel="stylesheet" href="course.css">
+</head>
+<body>
+	<header>
+		<h1>mastering Webiner</h1>
+		<input type="text" id="search-course" placeholder="Search Course">
+
+  <button id="search-btn">Search</button>
+  
+  
+	</header>
+	<nav>
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="courses.html">Courses</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	<main>
+		<h2>Add a new Course</h2>
+		<form action="/courses/add" method="POST">
+			<label for="name">Name:</label><br>
+			<input type="text" id="name" name="name"><br>
+			<label for="level">Level:</label><br>
+			<input type="text" id="level" name="level"><br>
+			<label for="image">Image URL:</label><br>
+			<input type="text" id="image" name="image"><br>
+			<input type="submit" value="Add Course">
+		</form>
+		<h2>Courses</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Level</th>
+					<th>Image</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- Here is where you would loop through the courses and display them in the table -->
+				<tr>
+					<td>Course 1</td>
+					<td>Intermediate</td>
+					<td><img src="https://example.com/course1.jpg" alt="Course 1"></td>
+					<td>
+						<button onclick="location.href='/courses/edit/1'">Edit</button>
+						<button onclick="location.href='/courses/delete/1'">Delete</button>
+					</td>
+				</tr>
+				<!-- ... -->
+			</tbody>
+		</table>
+	</main>
+	<footer>
+		<p>&copy; 2022 Our Website</p>
+	</footer>
+	<script>
+		document.getElementById('search-btn').addEventListener('click', function() {
+			var search = document.getElementById('search-course').value;
+			location.href = '/courses/search/' + search;
+		});
+	</script>
+</body>
+</html>
